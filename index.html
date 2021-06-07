@@ -12,13 +12,19 @@
     <label for="csv-text">
       <textarea 
         name="csv-text" id="csv-text"
+        data-input-name="csv-text"
         cols="30" rows="10"></textarea>
     </label>
     <label for="json-text">
       <textarea name="json-text" id="json-text" cols="30" rows="10"></textarea>
     </label>
     <div>
-      <button>Convert file</button>
+      <button 
+        data-behavior="clear-input-text" 
+        data-clear-input="csv-text">
+          Clear all
+      </button>
+      <button type="submit">Convert file</button>
     </div>
   </form>
   <script src="main.js"></script>
