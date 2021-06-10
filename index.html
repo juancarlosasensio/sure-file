@@ -18,6 +18,15 @@
     <label for="json-text">
       <textarea name="json-text" id="json-text" cols="30" rows="10"></textarea>
     </label>
+    <code 
+      style="
+          padding: 16px 32px; 
+          background-color: #F7F8FA;
+          max-width: 50%;
+          display: block;
+      ">
+      //code will output here...
+    </code>
     <div>
       <button 
         data-behavior="clear-input-text" 
@@ -27,6 +36,8 @@
       <button type="submit">Convert file</button>
     </div>
   </form>
+  <script src="https://unpkg.com/file-saver/dist/FileSaver.min.js"></script>
+  <script src="https://www.unpkg.com/papaparse/papaparse.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
